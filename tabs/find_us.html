@@ -1,0 +1,87 @@
+<!-- DEVELOPER: Jonathan Payes, IS117-011, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Find Us - Mario's</title>
+    <link rel="shortcut icon" href="../images/restaurant_logo.jpg">
+    <link rel="stylesheet" href="../styles/restaurant.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Combined Fixed Header and Navigation -->
+    <div class="fixed-top-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/restaurant_logo.jpg" alt="Restaurant Logo" height="40" class="mr-2">
+                Mario's
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beverages.html">Beverages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="contact.html">Info</a>
+                            <a class="dropdown-item" href="find_us.html">Find Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Spacer to compensate for the fixed header height -->
+    <div style="height: 80px;"></div>
+
+    <!-- Welcome Section -->
+    <header class="bg-dark text-white text-center welcome-section">
+        <h2>Visit Our Restaurant</h2>
+        <p class="lead">Find our location and plan your visit. We're looking forward to welcoming you.</p>
+    </header>
+
+    <main class="container mt-5">
+        <section class="location-details">
+            <h2 class="text-center">Our Location</h2>
+            <p class="text-center">We are located at:</p>
+            <p class="text-center"><strong>323 Dr. Martin Luther King Jr. Blvd</strong></p>
+            <p class="text-center">Newark, NJ 07102</p>
+            <p class="text-center">Phone: (973) 596-3000</p>
+            <p class="text-center">Email: <a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+
+            <h3 class="mt-5 text-center">Find Us on the Map</h3>
+            <div class="map-responsive text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.773417251327!2d-74.17902078423926!3d40.74230197932765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254602f5298a3%3A0xe360fb2ffcd1f546!2sNew%20Jersey%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1628241707891!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <h3 class="mt-5 text-center">Directions</h3>
+            <p class="text-center">From downtown Newark, head north on Broad Street, then turn right onto Dr. Martin Luther King Jr. Blvd. Our restaurant is located within the NJIT campus.</p>
+            
+            <h3 class="mt-5 text-center">Parking Information</h3>
+            <p class="text-center">Parking is available at the NJIT Parking Deck, located at 154 Summit Street. Additional street parking is available in the surrounding area.</p>
+            
+            <h3 class="mt-5 text-center">Public Transportation</h3>
+            <p class="text-center">NJIT is accessible via the Newark Light Rail, with stops at Warren Street/NJIT and Norfolk Street stations. Several NJ Transit bus routes also serve the area.</p>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Mario's. All rights reserved.</p>
+        <p><small>*This website is for educational purposes only. The restaurant and addresses mentioned are fictional.*</small></p>
+    </footer>
+
+    <!-- Correct order of JS files for Bootstrap dropdown functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

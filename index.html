@@ -1,0 +1,168 @@
+<!-- DEVELOPER: Jonathan Payes, IS117-011, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home - Mario's</title>
+    <link rel="stylesheet" href="styles/restaurant.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/restaurant_logo.jpg"> 
+</head>
+
+<body>
+    <!-- Combined Fixed Header and Navigation -->
+    <div class="fixed-top-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/restaurant_logo.jpg" alt="Restaurant Logo" height="40" class="mr-2"> 
+                Mario's
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tabs/food.html">Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tabs/beverages.html">Beverages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tabs/reservations.html">Reservations</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="tabs/contact.html">Info</a>
+                            <a class="dropdown-item" href="tabs/find_us.html">Find Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Spacer to compensate for the fixed header height -->
+    <div style="height: 80px;"></div>
+
+    <!-- Welcome Section -->
+    <header class="bg-dark text-white text-center welcome-section">
+        <h2>Welcome to Mario's</h2>
+        <p class="lead">Experience culinary excellence and make unforgettable memories.</p>
+    </header>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/food_closeup.jpg" class="d-block w-100" alt="Delicious Food"> 
+            </div>
+            <div class="carousel-item">
+                <img src="images/interior.jpg" class="d-block w-100" alt="Restaurant Interior"> 
+            </div>
+            <div class="carousel-item">
+                <img src="images/exterior.jpg" class="d-block w-100" alt="Restaurant Exterior"> 
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <main class="container mt-5">
+        <section class="home-content">
+            <h2 class="text-center mb-4">Explore Our Restaurant</h2>
+            <div class="row">
+                <!-- Card 1: Featured Dish -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/gourmet_surf.jpg" class="card-img-top" alt="Featured Dish"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Gourmet Surf and Turf</h5>
+                            <p class="card-text">Try our chef's special dish featuring a succulent piece of steak paired with beautifully cooked seafood, colorful vegetables, and a delicate garnish.</p>
+                            <a href="tabs/food.html" class="btn btn-primary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Special Promotions -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/seasonal_delight_offer.jpg" class="card-img-top" alt="Special Promotion"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Seasonal Delights Extravaganza</h5>
+                            <p class="card-text">Enjoy our seasonal promotions featuring a variety of delightful dishes and refreshing drinks. Don't miss out on these limited-time offers!</p>
+                            <!-- Link with anchor to scroll directly to the promotions section in food.html -->
+                            <a href="tabs/food.html#promotions" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Reservations -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/reservation.jpg" class="card-img-top" alt="Reservations"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Book a Table</h5>
+                            <p class="card-text">Reserve a table online and ensure you have the perfect spot for your meal. Enjoy a beautifully set dining table with elegant tableware and a welcoming ambiance.</p>
+                            <a href="tabs/reservations.html" class="btn btn-primary">Make a Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about mt-5">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">[Restaurant Name] is a family-owned restaurant that has been serving delicious meals for over 20 years. We pride ourselves on using fresh, locally-sourced ingredients to create dishes that are both innovative and comforting.</p>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials mt-5">
+            <h2 class="text-center">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">"The best dining experience I've ever had! The food is amazing and the staff is so friendly."</p>
+                        <footer class="blockquote-footer">John Doe</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">"A hidden gem! The ambiance is perfect for a romantic evening or a family dinner."</p>
+                        <footer class="blockquote-footer">Jane Smith</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">"Their special promotions are unbeatable. We come here every week!"</p>
+                        <footer class="blockquote-footer">Mark Johnson</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-5">
+            <h3>Our Location</h3>
+            <p>We are located at 323 Dr. Martin Luther King Jr. Blvd, Newark, NJ 07102</p>
+            <p>Business Hours: Mon-Fri, 9 AM - 10 PM</p>
+            <p>Closed on public holidays.</p>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Mario's. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

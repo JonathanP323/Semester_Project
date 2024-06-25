@@ -1,0 +1,189 @@
+<!-- DEVELOPER: Jonathan Payes, IS117-011, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Food - Mario's</title>
+    <link rel="stylesheet" href="../styles/restaurant.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../images/restaurant_logo.jpg"> 
+</head>
+
+<body>
+    <!-- Combined Fixed Header and Navigation -->
+    <div class="fixed-top-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/restaurant_logo.jpg" alt="Restaurant Logo" height="40" class="mr-2"> 
+                Mario's
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beverages.html">Beverages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="contact.html">Info</a>
+                            <a class="dropdown-item" href="find_us.html">Find Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Spacer to compensate for the fixed header height -->
+    <div style="height: 80px;"></div>
+
+    <!-- Welcome Section -->
+    <header class="bg-dark text-white text-center welcome-section">
+        <h2>Discover Our Delicious Menu</h2>
+        <p class="lead">Savor the finest dishes crafted with the freshest ingredients.</p>
+    </header>
+
+    <main class="container mt-5">
+        <!-- Main Courses Section -->
+        <section>
+            <h2>Main Courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/gourmet_surf.jpg" class="card-img-top" alt="Gourmet Surf & Turf"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Gourmet Surf & Turf</h5>
+                            <p class="card-text">Try our chef's special dish, a culinary delight featuring a succulent piece of steak paired with beautifully cooked seafood, colorful vegetables and a delicate garnish.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/seared_salmon_fillet.jpg" class="card-img-top" alt="Seared Salmon Fillet"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Seared Salmon Fillet</h5>
+                            <p class="card-text">A seared salmon fillet with a lemon-dill sauce, served with quinoa and steamed asparagus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/vegetarian_lasagna.jpg" class="card-img-top" alt="Vegetarian Lasagna"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Vegetarian Lasagna</h5>
+                            <p class="card-text">A hearty vegetarian lasagna layered with fresh vegetables, ricotta cheese, and marinara sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appetizers Section -->
+        <section class="mt-5">
+            <h2>Appetizers</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/bruschetta.jpg" class="card-img-top" alt="Bruschetta"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Bruschetta</h5>
+                            <p class="card-text">Toasted baguette slices topped with fresh tomatoes, basil, garlic, and a drizzle of balsamic glaze.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/shrimp_cocktail.jpg" class="card-img-top" alt="Shrimp Cocktail"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Shrimp Cocktail</h5>
+                            <p class="card-text">Succulent shrimp served with a zesty cocktail sauce and lemon wedges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/stuffed_mushrooms.jpg" class="card-img-top" alt="Stuffed Mushrooms"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Stuffed Mushrooms</h5>
+                            <p class="card-text">Mushrooms stuffed with a savory blend of cheese, garlic, and herbs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section class="mt-5">
+            <h2>Desserts</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/chocolate_lava_cake.jpg" class="card-img-top" alt="Chocolate Lava Cake"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Lava Cake</h5>
+                            <p class="card-text">A rich chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/cheesecake.jpg" class="card-img-top" alt="Cheesecake"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Cheesecake</h5>
+                            <p class="card-text">A creamy cheesecake with a graham cracker crust, topped with fresh berries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../images/tiramisu.jpg" class="card-img-top" alt="Tiramisu"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu</h5>
+                            <p class="card-text">A classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Promotions Section -->
+        <section id="promotions" class="mt-5">
+            <h2>Special Promotions</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="../images/seasonal_delight_offer.jpg" class="card-img-top" alt="Seasonal Delight Offer"> 
+                        <div class="card-body">
+                            <h4 class="card-title">Seasonal Delight Offer</h4>
+                            <p class="card-text">Enjoy our special seasonal offer with a delightful menu featuring fresh, seasonal ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="../images/promo2.jpg" class="card-img-top" alt="Happy Hour"> 
+                        <div class="card-body">
+                            <h4 class="card-title">Happy Hour</h4>
+                            <p class="card-text">Join us for Happy Hour every weekday from 4 PM to 6 PM and enjoy discounted drinks and appetizers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Mario's. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

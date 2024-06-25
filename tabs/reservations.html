@@ -1,0 +1,93 @@
+<!-- DEVELOPER: Jonathan Payes, IS117-011, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reservations - Mario's</title>
+    <link rel="shortcut icon" href="../images/restaurant_logo.jpg"> 
+    <link rel="stylesheet" href="../styles/restaurant.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Combined Fixed Header and Navigation -->
+    <div class="fixed-top-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/restaurant_logo.jpg" alt="Restaurant Logo" height="40" class="mr-2"> 
+                Mario's
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beverages.html">Beverages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="contact.html">Info</a>
+                            <a class="dropdown-item" href="find_us.html">Find Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Spacer to compensate for the fixed header height -->
+    <div style="height: 80px;"></div>
+
+    <!-- Welcome Section -->
+    <header class="bg-dark text-white text-center welcome-section">
+        <h2>Book Your Table</h2>
+        <p class="lead">Reserve your spot for an unforgettable dining experience.</p>
+    </header>
+
+    <main class="container mt-5">
+        <section class="reservation-form">
+            <h2 class="text-center">Make a Reservation</h2>
+            <form class="mt-4">
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" class="form-control" id="guests" min="1" max="20" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Mario's. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

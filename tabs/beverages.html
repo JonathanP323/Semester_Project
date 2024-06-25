@@ -1,0 +1,146 @@
+<!-- DEVELOPER: Jonathan Payes, IS117-011, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beverages - Mario's</title>
+    <link rel="shortcut icon" href="../images/restaurant_logo.jpg"> 
+    <link rel="stylesheet" href="../styles/restaurant.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Combined Fixed Header and Navigation -->
+    <div class="fixed-top-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/restaurant_logo.jpg" alt="Restaurant Logo" height="40" class="mr-2"> 
+                Mario's
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beverages.html">Beverages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="contactDropdown">
+                            <a class="dropdown-item" href="contact.html">Info</a>
+                            <a class="dropdown-item" href="find_us.html">Find Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Spacer to compensate for the fixed header height -->
+    <div style="height: 80px;"></div>
+
+    <!-- Welcome Section -->
+    <header class="bg-dark text-white text-center welcome-section">
+        <h2>Explore Our Beverage Selection</h2>
+        <p class="lead">Indulge in our exquisite range of drinks, from cocktails to smoothies.</p>
+    </header>
+
+    <main class="container mt-5">
+        <section class="beverages-section">
+            <h2 class="text-center">Cocktails</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/tropical_paradise_cocktail.jpg" alt="Tropical Paradise Cocktail" class="img-fluid mb-3">
+                    <h3>Tropical Paradise Cocktail</h3>
+                    <p>A refreshing cocktail with a blend of tropical fruits, garnished with a slice of pineapple and a cherry on top.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/classic_old_fashioned.jpg" alt="Classic Old Fashioned" class="img-fluid mb-3">
+                    <h3>Classic Old Fashioned</h3>
+                    <p>A classic cocktail with a rich amber color, garnished with an orange twist.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/rainbow_delight_cocktail.jpg" alt="Rainbow Delight Cocktail" class="img-fluid mb-3">
+                    <h3>Rainbow Delight Cocktail</h3>
+                    <p>A vibrant cocktail with layers of colorful fruit juices, garnished with a slice of lime and a cherry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="beverages-section mt-5">
+            <h2 class="text-center">Fine Wines</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/fine_red_wine.jpg" alt="Fine Red Wine" class="img-fluid mb-3">
+                    <h3>Fine Red Wine</h3>
+                    <p>A fine glass of red wine with a deep, rich color.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/fine_white_wine.jpg" alt="Fine White Wine" class="img-fluid mb-3">
+                    <h3>Fine White Wine</h3>
+                    <p>A crisp and refreshing glass of white wine, perfect for pairing with seafood.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/fine_rose_wine.jpg" alt="Fine Rose Wine" class="img-fluid mb-3">
+                    <h3>Fine Rosé Wine</h3>
+                    <p>A delicate and fruity glass of rosé wine, ideal for a summer evening.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="beverages-section mt-5">
+            <h2 class="text-center">Smoothies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/mixed_berry_smoothie.jpg" alt="Mixed Berry Smoothie" class="img-fluid mb-3">
+                    <h3>Mixed Berry Smoothie</h3>
+                    <p>A vibrant and colorful smoothie made with mixed berries, topped with a sprig of mint and fresh berries.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/tropical_mango_smoothie.jpg" alt="Tropical Mango Smoothie" class="img-fluid mb-3">
+                    <h3>Tropical Mango Smoothie</h3>
+                    <p>A refreshing smoothie made with ripe mangoes and a hint of coconut, topped with a slice of mango.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/green_detox_smoothie.jpg" alt="Green Detox Smoothie" class="img-fluid mb-3">
+                    <h3>Green Detox Smoothie</h3>
+                    <p>A healthy smoothie made with spinach, kale, green apple, and a touch of ginger.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="beverages-section mt-5">
+            <h2 class="text-center">Juices</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/fresh_orange_juice.jpg" alt="Fresh Orange Juice" class="img-fluid mb-3">
+                    <h3>Fresh Orange Juice</h3>
+                    <p>A refreshing glass of freshly squeezed orange juice, garnished with a slice of orange.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/apple_carrot_juice.jpg" alt="Apple Carrot Juice" class="img-fluid mb-3">
+                    <h3>Apple Carrot Juice</h3>
+                    <p>A delicious blend of sweet apples and fresh carrots, packed with vitamins.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/beetroot_juice.jpg" alt="Beetroot Juice" class="img-fluid mb-3">
+                    <h3>Beetroot Juice</h3>
+                    <p>A nutrient-rich juice made from fresh beetroots, perfect for a healthy start to your day.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Mario's. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

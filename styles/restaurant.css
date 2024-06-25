@@ -1,0 +1,57 @@
+/* DEVELOPER: Jonathan Payes, IS117-011, Spring 2024 */
+/* styles/restaurant.css */
+.dropdown-menu-custom {
+    max-width: 70px;    
+    width: auto;        
+    overflow-x: hidden; 
+    padding: 0.5rem;    
+    margin: 0;          
+    white-space: nowrap; 
+    box-sizing: border-box; 
+}
+
+.carousel-item img {
+    max-height: 520px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.fixed-top-custom {
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+    background-color: #343a40; 
+}
+
+.welcome-section {
+    margin-top: -15px; 
+    margin-bottom: -20px; 
+    padding-top: 5px; 
+    padding-bottom: 40px; 
+}
+
+/* Button custom styles */
+.btn-custom {
+    background-color: #6c757d; 
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #5a6268; 
+    color: white;
+}
+
+/* Sticky footer styles */
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; 
+    padding: 10px 0;
+}
+
+
+body {
+    padding-bottom: 60px; 
+}
